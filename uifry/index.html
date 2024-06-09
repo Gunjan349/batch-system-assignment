@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/icon.png" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>uifry</title>
+  </head>
+  <body>
+    <!-- header -->
+    <nav class="header px-16 py-5 flex font-bold items-center" >
+      <div class="logo h-7 w-24">
+        <img src="images/logo.png" class="h-full w-full" />
+      </div>
+      <div class="logo-dark h-7 w-24 hidden">
+        <img src="images/logo-dark.png" class="h-full w-full" />
+      </div>
+      <div class="nav flex pl-12 w-full justify-between items-center">
+        <div class="nav-links">
+          <ul class="flex items-center gap-x-6">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About Us</a>
+            </li>
+            <li>
+              <a href="#">Pricing</a>
+            </li>
+            <li>
+              <a href="#">Features</a>
+            </li>
+          </ul>
+        </div>
+        <div class="toggle-btn-dark">
+            <input type="checkbox" id="checkbox"/>
+            <label for="checkbox" class="toggle-label">
+                <span class="toggle-ball"></span>
+            </label>
+        </div>
+        <button class="download-btn px-6 py-2 bg-black text-white rounded-md">
+          Download
+        </button>
+      </div>
+      <div
+        class="toggle-btn text-3xl font-bold text-red-500 cursor-pointer hidden pl-5"
+      >
+        <i id="menu" class="ri-menu-line"></i>
+      </div>
+    </nav>
+
+    <!-- end header -->
+
+    <!-- first section -->
+    <div class="first-section flex justify-evenly" data-aos="fade-down">
+      <div class="up-part">
+        <div class="bg-img relative">
+          <img src="images/bg1.png" width="600px" />
+
+          <div class="content absolute top-0 pt-24">
+            <h1 class="font-extrabold text-6xl mb-4">
+              Make The Best Financial Decisions
+            </h1>
+            <p class="mb-8">
+              Cum Et Convallis Risus Placerat Aliquam, Nunc. Scelerisque Aliquet
+              Faucibus Tincidunt Eu Adipiscing Sociis Arcu Lorem Porttitor.
+            </p>
+            <div class="lower-part flex gap-10 items-center">
+              <button
+                class="download-btn px-6 py-2 bg-black text-white rounded-md"
+              >
+                Get Started <i class="ri-arrow-right-line"></i>
+              </button>
+              <button class="font-bold">
+                <i class="ri-play-circle-line text-xl"></i> Watch Video
+              </button>
+            </div>
+            <div class="strap flex">
+              <img src="images/img3.png" width="500px" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="down-part" data-aos="fade-left">
+        <img src="images/img2.png" width="600px" />
+      </div>
+    </div>
+
+    <!-- second section -->
+    <div class="second-section flex mt-40 justify-around items-center" data-aos="fade-up">
+      <div class="image">
+        <img src="images/img1.png" width="800px"/>
+      </div>
+      
+        
+        <div class="content">
+          <h3>FEATURES</h3>
+          <h1 class="font-extrabold text-4xl">Uifry Premium</h1>
+          <div class="bullet-pts">
+            <div class="first mt-5">
+              <div class="heading flex items-center gap-3">
+                <i
+                  class="ri-shining-line text-red-500 text-xl"
+                ></i>
+                <h2 class="font-bold text-xl">Budgeting intervals</h2>
+              </div>
+              <h2>
+                Cum Et Convallis Risus Placerat Aliquam, Nunc. Scelerisque
+                Aliquet Faucibus Tincidunt Eu Adipiscing Sociis Arcu Lorem
+                Porttitor.
+              </h2>
+            </div>
+            <div class="second mt-5">
+              <div class="heading flex items-center gap-3">
+                <img src="images/ring.png" width="25px" />
+                <h2 class="font-bold text-xl">Budgeting intervals</h2>
+              </div>
+              <h2>
+                Cum Et Convallis Risus Placerat Aliquam, Nunc. Scelerisque
+                Aliquet Faucibus Tincidunt Eu Adipiscing Sociis Arcu Lorem
+                Porttitor.
+              </h2>
+            </div>
+            <div class="third mt-5">
+              <div class="heading flex items-center gap-3">
+                <img src="images/cube.jpg" width="25px" />
+                <h2 class="font-bold text-xl">Budgeting intervals</h2>
+              </div>
+              <h2>
+                Cum Et Convallis Risus Placerat Aliquam, Nunc. Scelerisque
+                Aliquet Faucibus Tincidunt Eu Adipiscing Sociis Arcu Lorem
+                Porttitor.
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end second section -->
+
+    <!-- third section -->
+    <div class="third-section flex justify-center items-center" data-aos="fade-down">
+      <div class="content">
+        <h3 class="tracking-wide text-red-500 font-bold">ADVATNAGES</h3>
+        <h1 class="text-3xl font-extrabold">Why Choose Uifry?</h1>
+        <div class="flex items-center gap-3 my-4">
+          <img src="images/notify.png" width="40px" class="mt-1" />
+          <h2 class="font-extrabold text-xl">
+            Clever Notifications
+          </h2>
+        </div>
+        <div>
+          <p class="max-w-xl">
+            Arcu At Dictum Sapien, Mollis. Vulputate Sit Id Accumsan, Ultricies.
+            In Ultrices Malesuada Elit Mauris Etiam Odio. Duis Tristique Lacus,
+            Et Blandit Viverra Nisl Velit. Sed Mattis Rhoncus, Diam Suspendisse
+            Sit Nunc, Gravida Eu. Lectus Eget Eget Ac Dolor Neque Lorem Sapien,
+            Suspendisse Aliquam.
+          </p>
+        </div>
+      </div>
+      <div class="down-img flex justify-center">
+        <img src="images/specs3.png" width="650px" />
+      </div>
+    </div>
+
+    <!-- end third section -->
+
+    <!-- fourth section -->
+
+    <div class="fourth-section flex justify-center items-center" data-aos="fade-up">
+      <div class="up-img">
+        <img src="images/specs2.png" width="600px" />
+      </div>
+      <div class="content">
+        <div class="flex items-center gap-3 my-4">
+          <img src="images/star.png" width="40px" />
+          <h2 class="font-extrabold text-xl">
+            Fully Customizable
+          </h2>
+        </div>
+        <div>
+          <p class="max-w-xl">
+            Arcu At Dictum Sapien, Mollis. Vulputate Sit Id Accumsan, Ultricies.
+            In Ultrices Malesuada Elit Mauris Etiam Odio. Duis Tristique Lacus,
+            Et Blandit Viverra Nisl Velit. Sed Mattis Rhoncus, Diam Suspendisse
+            Sit Nunc, Gravida Eu. Lectus Eget Eget Ac Dolor Neque Lorem Sapien,
+            Suspendisse Aliquam.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- end fourth section -->
+
+    <!-- testimonial section -->
+
+    <div class="testimonials" data-aos="fade-down">
+      <div class="heading text-center">
+        <h3 class="tracking-wider font-bold">TESTIMONIAL</h3>
+        <h1 class="font-extrabold text-3xl leading-8">
+          What Our Users <br />
+          Say About Us?
+        </h1>
+      </div>
+      <div class="subpart flex items-center justify-center">
+        <div class="up-image">
+          <img src="images/testin.png" width="700px" />
+        </div>
+        <div class="content">
+          <h2 class="text-2xl font-extrabold mb-5">
+            The Best Financial Accounting App Ever!
+          </h2>
+          <p>
+            “Arcu At Dictum Sapien, Mollis. Vulputate Sit Id Accumsan,
+            Ultricies. In Ultrices Malesuada Elit Mauris Etiam Odio. Duis
+            Tristique Lacus, Et Blandit Viverra Nisl Velit. Sed Mattis Rhoncus,
+            Diam Suspendisse Sit Nunc, Gravida Eu. Lectus Eget Eget Ac Dolor
+            Neque Lorem Sapien, Suspendisse Aliquam.”
+          </p>
+          <div class="faces my-8">
+            <img src="images/faces.png" />
+          </div>
+          <h3 class="font-extrabold">Nick Jonas</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- end testimonial section -->
+
+    <!-- FAQ section -->
+
+    <div class="faq mx-24  mt-16" data-aos="fade-up">
+      <div class="heading">
+        <h3 class="tracking-wider font-bold text-red-500">FAQ</h3>
+        <h1 class="font-extrabold text-3xl leading-8">
+          Frequently Asked <br />
+          Questions
+        </h1>
+      </div>
+      <div class="boxes flex gap-3 mt-5 justify-center">
+        <div class="box box1 bg-red-500 text-white rounded-md p-8">
+          <h2 class="text-2xl font-extrabold mb-3">
+            The Best Financial Accounting App Ever!
+          </h2>
+          <h4>
+            “Arcu At Dictum Sapien, Mollis. Vulputate Sit Id Accumsan,
+            Ultricies. In Ultrices Malesuada Elit Mauris.
+          </h4>
+        </div>
+        <div class="box box2 rounded-md p-8">
+          <h2 class="text-2xl font-extrabold">
+            The Best Financial Accounting App Ever!
+          </h2>
+          <h4>
+            “Arcu At Dictum Sapien, Mollis. Vulputate Sit Id Accumsan,
+            Ultricies. In Ultrices Malesuada Elit Mauris.
+          </h4>
+        </div>
+      </div>
+      <div class="boxes flex gap-3 mt-5 justify-center">
+        <div class="box box3 rounded-md p-8">
+          <h2 class="text-2xl font-extrabold mb-3">
+            The Best Financial Accounting App Ever!
+          </h2>
+          <h4>
+            “Arcu At Dictum Sapien, Mollis. Vulputate Sit Id Accumsan,
+            Ultricies. In Ultrices Malesuada Elit Mauris.
+          </h4>
+        </div>
+        <div class="box box4 rounded-md p-8 bg-red-500 text-white">
+          <h2 class="text-2xl font-extrabold">
+            The Best Financial Accounting App Ever!
+          </h2>
+          <h4>
+            “Arcu At Dictum Sapien, Mollis. Vulputate Sit Id Accumsan,
+            Ultricies. In Ultrices Malesuada Elit Mauris.
+          </h4>
+        </div>
+      </div>
+      <div class="boxes flex gap-3 mt-5 justify-center">
+        <div class="box box1 bg-red-500 text-white rounded-md p-8">
+          <h2 class="text-2xl font-extrabold mb-3">
+            The Best Financial Accounting App Ever!
+          </h2>
+          <h4>
+            “Arcu At Dictum Sapien, Mollis. Vulputate Sit Id Accumsan,
+            Ultricies. In Ultrices Malesuada Elit Mauris.
+          </h4>
+        </div>
+        <div class="box box2 rounded-md p-8">
+          <h2 class="text-2xl font-extrabold">
+            The Best Financial Accounting App Ever!
+          </h2>
+          <h4>
+            “Arcu At Dictum Sapien, Mollis. Vulputate Sit Id Accumsan,
+            Ultricies. In Ultrices Malesuada Elit Mauris.
+          </h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- end FAQ section -->
+
+    <!-- last section -->
+
+    <div class="last-section" data-aos="fade-down">
+      <div class="bg relative">
+        <img src="images/bg1.png" width="350px" />
+            <div class="banner">
+                <div class="img"></div>
+                <div class="content absolute text-white">
+                    <h1 class="font-extrabold text-4xl tracking-wider">
+                        Ready To Get Started?
+                      </h1>
+                      <h3 class="text-gray-200 text-lg my-4">Risus Habitant Leo Egestas Mauris Diam Eget Morbi Tempus Vulputate.</h3>
+                      <button class="bg-white text-black font-bold text-lg px-5 py-2 rounded-sm mt-3 ">Download <i class="ri-apple-fill"></i></button>
+                </div>
+            </div>
+        </div>
+      
+    </div>
+
+    <!-- end last section -->
+   
+    <!-- footer -->
+    <div class="footer flex justify-evenly items-start pb-10" data-aos="fade-up">
+        <div class="info">
+            <div class="logo">
+                <img src="images/logo.png" width="150px" />
+              </div>
+              <div class="logo-dark">
+                <img src="images/logo-dark.png" width="150px" class="hidden"/>
+              </div>
+            <div class="mail"><i class="ri-mail-fill text-red-500"></i>Help@Frybix.Com</div>
+            <div class="contact"> <i class="ri-phone-fill text-red-500"></i>+1234 456 678 89</div>
+        </div>
+        <div class="links">
+            <h1 class="text-2xl font-bold ">Links</h1>
+            <h4>Home</h4>
+            <h4>About Us</h4>
+            <h4>Bookings</h4>
+            <h4>Blog</h4>
+        </div>
+        <div class="legal">
+            <h1 class="text-2xl font-bold">Legal</h1>
+            <h4>Terms Of Use</h4>
+            <h4>Privacy Policy</h4>
+            <h4>Cookie Policy</h4>
+        </div>
+        <div class="product">
+            <h1 class="text-2xl font-bold">Product</h1>
+            <h4>Take Tour</h4>
+            <h4>Live Chat</h4>
+            <h4>Reveiws</h4>
+        </div>
+        <div class="newsletter">
+            <h1 class="text-2xl font-bold">Newsletter</h1>
+            <h4>Stay Up To Date</h4>
+             <div class="subscribe">
+                <input type="email" placeholder="Your email" class="mx-4 px-3"/>
+                <button class="bg-black text-white px-5 rounded-sm mt-3 ">Subscribe</button>
+             </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end footer -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset : 200,
+        duration : 1000,
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

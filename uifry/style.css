@@ -1,0 +1,215 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* dark mode */
+
+#checkbox{
+    display: none;
+}
+
+.dark-mode .toggle-label{
+    background-color: white;
+}
+
+.toggle-label{
+    width: 3.5rem;
+    height: 2rem;
+    background-color: black;
+    display: inline-block;
+    position: relative;
+    border-radius: 10rem;
+}
+
+.toggle-ball{
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    top: .2rem;
+    left: .3rem;
+    transition: all.5s;
+}
+
+#checkbox:checked + .toggle-label .toggle-ball{
+    transform: translateX(1.3rem);
+    background-color: #f56565;
+}
+
+.dark-mode{
+    background-color: #141414;
+    color: white;
+}
+
+.dark-mode .logo{
+    display: none;
+}
+
+.dark-mode .logo-dark{
+    display: block;
+}
+ /* dark mode end */
+
+ /* hamburger navbar */
+
+ .nav-links ul li:hover{
+    color: #ff5656;
+    cursor: pointer;
+}
+
+@media screen and (max-width : 840px) {
+   .nav-links{
+    position: absolute;
+    top: 80px;
+    background-color: #ff5656;
+    color: white;
+    left: 0%;
+    width: 100%;
+    height: 0;
+    transition: all .5s;
+    overflow: hidden;
+   }
+   .nav-links.active{
+    height: 200px;
+   }
+   .nav-links ul{
+    padding-top: 15px;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    }
+  
+   .toggle-btn{
+    display: block;
+   }
+   .nav{
+    justify-content: end;
+   }
+}
+
+/* hamburger navbar ends */
+
+.testimonials .content{
+    width: 25rem;
+}
+
+
+.banner{
+    height: 700px;
+    border-radius: 5px;
+    top: -16rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner .img{
+    height: 100%;
+
+    background-image: url('images/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+.banner .content{
+    top: 50%;
+    left: 35%;
+    transform: translate(-50% , -35%);
+}
+
+.info, .links, .legal, .product, .newsletter{
+    line-height: 2.5rem;
+}
+
+/* responsive design */
+
+@media (max-width: 1050px){
+    .first-section .bg-img img , .first-section .right-part img{
+        width: 500px;
+    }
+    .first-section .content{
+        padding-top: 3rem;
+    }
+    .first-section .content h1{
+        font-size: 3rem;
+    }
+    .second-section .content h1{
+        font-size: 2rem;
+    }
+    .second-section .content .bullet-pts .second{
+        margin-bottom: .5rem;
+    }
+    .footer .newsletter{
+        display: none;
+    }
+}
+
+@media (max-width:650px){
+    .first-section .content h1{
+        font-size: 2rem;
+    }
+    .first-section .lower-part{
+        gap: 1rem;
+    }
+    .faq .boxes{
+        flex-wrap: wrap;
+    }
+    .faq .boxes .box3{
+        background-color: #f56565;
+        color: white;
+    }
+    .faq .boxes .box4{
+        background-color: white;
+        color: black;
+    }
+}
+
+@media (max-width:560px){
+    .first-section .content p{
+        display: none;
+    }
+    .first-section .lower-part button{
+      padding: 0.5rem;
+      font-size: medium;
+    }
+    .footer{
+        display: block;
+        text-align: center;
+    }
+}
+
+@media (max-width:890px){
+    .first-section .strap{
+       width: 350px;
+    }
+    .second-section, .third-section, .fourth-section, .testimonials .subpart{
+        flex-wrap: wrap;
+    }
+    .second-section .content{
+       margin: 0 3rem;
+    }
+    .third-section .content , .fourth-section .content , .testimonials .content{
+        margin: 3rem;
+    }
+    .testimonials .content{
+        width: 100%;
+    }
+    .faq{
+        margin: 0 0;
+    }
+}
+
+@media (max-width:1480px){
+    .last-section{
+        display: none;
+    }
+}
